@@ -1,38 +1,134 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Sofia Sans', sans-serif;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 65px;
+  }
+  
+.shopping-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #61dafb;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+
+.shopping{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+.cart-icon{
+  cursor: pointer;
+  margin-right:20px;
+  font-size: 22px;
+  position: relative;
+}
+
+sup{
+  background: red;
+  border-radius: 20px;
+  padding: 0 2px;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  bottom:15px
+}
+
+.product-item {
+    padding: 36px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(30, 28, 28);
+}
+.product-img{
+width: 100%;
+}
+.product-name {
+    text-align: center;
+    color: blueviolet;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+.product-details{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cost{
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+}
+
+.btn-add{
+  display: block;
+  margin: 0 auto;
+  background-color: #61dafb;
+  padding: 12px;
+  width: 39%;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.cart{
+  position: relative;
+  top: 65px;
+}
+.cart-name{
+  font-size: 1rem;
+  font-weight: bold;
+  color: blueviolet;
+  margin-top: 12px;
+}
+
+.minus, .plus{
+  background: #61dafb;
+  border-radius: 11px;
+  padding: 5px;
+  width: 30px;
+  margin: 12px 10px;
+}
+
+.cart-img{
+  margin-top: 25px;
+}
+
+.btn-pay{
+  display: block;
+  margin: 0 auto;
+  background-color: #61dafb;
+  padding: 12px;
+  width: 20%;
+  border-radius: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-shop{
+  display: block;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total{
+  text-align: center;
+  margin:10px 0;
+  color: red;
+  font-weight: bold;
 }

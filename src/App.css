@@ -52,7 +52,6 @@ sup{
 
 .product-item {
     padding: 36px;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(30, 28, 28);
 }
 .product-img{
 width: 100%;
@@ -131,4 +130,73 @@ width: 100%;
   margin:10px 0;
   color: red;
   font-weight: bold;
+}
+
+@media screen and (max-width : 820px) {
+
+  .btn-add{
+    width: 80%;
+  }
+  
+}
+  
+@media screen and (max-width : 500px) {
+
+  .products{
+    display: block;
+  }
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 510%;
+  }
+  
+}
+
+@media screen and (max-width : 400px) {
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 550%;
+  }
+  .cart-img{
+    width: 80%;
+  }
+  .btn-pay{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width : 376px) {
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 570%;
+  }
+
+  .cart-img{
+    width: 80%;
+  }
+
+  .btn-pay{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width : 360px) {
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 606%;
+  }
+}
+
+@media screen and (max-width : 320px) {
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 720%;
+  }
+}
+
+@media screen and (max-width : 300px) {
+
+  .product-img,.product-name,.product-details,.cost,.btn-add{
+    width: 820%;
+  }
 }
